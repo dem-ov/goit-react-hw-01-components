@@ -1,0 +1,42 @@
+table {
+    margin-top: 30px;
+    box-shadow: 0 0 10px #c6cccced;
+    width: 470px;
+    border-spacing: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #7e6f7498;
+        border-radius: 5px;
+}
+
+thead tr {
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+table th {
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #524a4d;
+}
+
+table td {
+    padding: 10px;
+    width: inherit;
+    font-weight: 700;
+    font-size: 15px;
+    color: #524a4d;
+    display: flex;
+    justify-content: center;
+}
+
+table tr {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid 1px #c6cccce6;
+}
+
+table tr:not(:last-child) {
+    margin-bottom: 5px;
+}
