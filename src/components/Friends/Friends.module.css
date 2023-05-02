@@ -6,6 +6,11 @@
     width: 470px;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
+            1px 4px 6px rgb(0 0 0 / 16%);
+        overflow: hidden;
+        border: 2px solid #7e6f7498;
+        border-radius: 5px;
 }
 
 
@@ -15,15 +20,19 @@
     flex-direction: column;
     width: inherit;
     padding: 0;
-    border: 2px solid #7e6f7498;
+    
         border-radius: 5px;
 }
 
 .friends__item {
     display: flex;
     align-items: center;
-    box-shadow: 0 0 10px #c6cccced;
+    border-bottom:  2px solid #7e6f7498;
+    
     padding: 20px;
+}
+.friends__item:last-child {
+    border-bottom: none;
 }
 
 .friends__status {
