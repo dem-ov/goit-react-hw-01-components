@@ -3,14 +3,12 @@ import PropTypes from 'prop-types';
 
 const createColor = () => {
   const color =
-    'rgba(' +
-    Math.round(Math.random() * 400) +
+    'rgb(' +
+    Math.round(Math.random() * 255) +
     ',' +
-    Math.round(Math.random() * 400) +
+    Math.round(Math.random() * 255) +
     ',' +
-    Math.round(Math.random() * 400) +
-    ',' +
-    0.5 +
+    Math.round(Math.random() * 255) +
     ')';
 
   return color;
@@ -19,8 +17,8 @@ const createColor = () => {
 export const TransactionHistory = ({ items }) => {
   return (
     <table>
-      <thead>
-        <tr style={{ backgroundColor: createColor() }}>
+      <thead style={{ backgroundColor: createColor() }}>
+        <tr>
           <th>Type</th>
           <th>Amount</th>
           <th>Currency</th>
@@ -43,8 +41,12 @@ export const TransactionHistory = ({ items }) => {
 };
 
 TransactionHistory.propTypes = {
-  id: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
-  amount: PropTypes.string.isRequired,
-  currency: PropTypes.string.isRequired,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };

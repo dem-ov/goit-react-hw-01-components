@@ -1,0 +1,15 @@
+.friend-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    flex-direction: column;
+    width: 470px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
+        1px 4px 6px rgb(0 0 0 / 16%);
+    overflow: hidden;
+    border: 2px solid #7e6f7498;
+    border-radius: 5px;
+    padding: 0px;
+}
